@@ -14,6 +14,6 @@ public class MoveComputer {
             randomCol = new Random().nextInt(3);
             randomRow = new Random().nextInt(3);
         }
-        table.getTable()[randomRow][randomCol] = 'O';
+        table.computerMove(randomRow, randomCol);
     }
 }

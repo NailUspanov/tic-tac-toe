@@ -1,10 +1,12 @@
 package tictactoe;
 
 import tictactoe.component.*;
+import tictactoe.keypad.DesktopNumericKeypadCellNumberConverter;
 
 public class Launcher {
     public static void main(String[] args) {
-        Game game = new Game(new MoveUser(), new Print(), new MoveComputer(), new WinnerVerifier(), new DrawVerifier());
+        DesktopNumericKeypadCellNumberConverter cellNumberConverter = new DesktopNumericKeypadCellNumberConverter();
+        Game game = new Game(new MoveUser(), new Print(cellNumberConverter), new MoveComputer(), new WinnerVerifier(), new CellVerifier(), cellNumberConverter);
         game.game();
     }
 }
