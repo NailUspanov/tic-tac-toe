@@ -1,4 +1,6 @@
-package tictactoe;
+package tictactoe.component;
+
+import tictactoe.model.FieldTable;
 
 public class DrawVerifier {
     public boolean isDraw;

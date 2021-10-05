@@ -1,4 +1,6 @@
-package tictactoe;
+package tictactoe.component;
+
+import tictactoe.model.FieldTable;
 
 public class Print {
     public void printTable() {
